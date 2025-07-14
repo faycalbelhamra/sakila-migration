@@ -33,7 +33,7 @@ Before running the migration, ensure you have the following installed and runnin
 
 1.  **Clone the Repository (or create your project):**
     ```bash
-    git clone [https://github.com/your-username/sakila-migration.git](https://github.com/your-username/sakila-migration.git)
+    git clone https://github.com/faycalbelhamra/sakila-migration.git
     cd sakila-migration
     ```
 
@@ -54,34 +54,6 @@ Before running the migration, ensure you have the following installed and runnin
 
 4.  **Start Redis and MongoDB Servers:**
     * Ensure both Redis and MongoDB servers are running on their default ports or configured ports.
-
-5.  **Environment Configuration (`.env` file):**
-    * Create a file named `.env` in the root directory of this project.
-    * Copy the contents from `.env.example` into your new `.env` file.
-    * Fill in your actual database credentials and host information.
-    * **IMPORTANT:** Do NOT commit your `.env` file to version control. Add `.env` to your `.gitignore` file.
-
-    Example `.env` (with placeholder values):
-    ```
-    # PostgreSQL Configuration
-    PG_USER=postgres
-    PG_PASSWORD=mysecretpassword
-    PG_HOST=localhost
-    PG_PORT=5432
-    PG_DATABASE=sakila_pg
-
-    # Redis Configuration
-    REDIS_HOST=localhost
-    REDIS_PORT=6379
-
-    # MongoDB Configuration
-    MONGO_URI=mongodb://localhost:27017
-    MONGO_DB_NAME=sakila_nosql
-
-    # Optional: Set to 'true' to clear data in target NoSQL databases before migration
-    # Set to 'false' if you want to append data or manage clearing manually.
-    CLEAR_NOSQL_DATA=false
-    ```
 
 ## How to Run the Migration
 
