@@ -60,5 +60,5 @@ Before running the migration, ensure you have the following installed and runnin
 After completing all setup steps, run the migration script:
 
 ```bash
-node migration.js
+node db_migrate_skela.js
 ```
